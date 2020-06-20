@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <TextView
+        android:id="@+id/tit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rename" />
+    <EditText
+        android:id="@+id/new_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tit"/>
+    <Button
+        android:id="@+id/cancel_rename_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@+id/new_name"
+        android:layout_alignRight="@+id/new_name"
+        android:textColor = "@color/colorAccent"
+        android:background="?android:attr/selectableItemBackground"/>
+<!--        style="?android:attr/borderlessButtonStyle"-->
+
+    <Button
+        android:id="@+id/rename_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/cancel_rename_btn"
+        android:layout_below="@+id/new_name"
+        android:text="Rename"
+        android:textColor="@color/colorAccent"
+        android:background="?android:attr/selectableItemBackground"/>
+
+</RelativeLayout>

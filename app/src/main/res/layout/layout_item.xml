@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/a_file"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/f_icon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_folder_amber_80dp"
+        android:layout_marginBottom="-5dp"/>
+    <TextView
+        android:id="@+id/f_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Folder Name"
+        android:layout_below="@id/f_icon"
+        android:layout_alignRight="@+id/f_icon"
+        android:layout_alignLeft="@+id/f_icon"
+        android:gravity="center"
+        android:maxLines="2"/>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/path_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#5c6bc0"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/cur_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:ellipsize="start"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="ROOT"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/cpy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button
+            android:id="@+id/cpy_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy Here"/>
+        <Button
+            android:id="@+id/cancel_cpy_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_folder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="Folder is Empty"/>
+
+    <GridView
+        android:id="@+id/grid_file"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="4dp"
+        android:numColumns="auto_fit"
+        android:paddingLeft="3dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+
+
+</LinearLayout>
